@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Dominoze Pizza</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="nav">
+    <div class="container nav-inner">
+      <div class="logo">
+        <span class="logo-icon">🍕</span>
+        <span class="logo-text">Dominoze</span>
+      </div>
+      <nav class="menu">
+        <a href="#menu">Menu</a>
+        <a href="#specials">Specials</a>
+        <a href="#about">About</a>
+        <a href="#order" class="btn-outline">Order</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <h1>Hot. Fresh. Delivered Fast.</h1>
+          <p>Try our signature Dominoze pizzas — handcrafted crust, premium toppings and secret sauce.</p>
+          <a href="#menu" class="btn">View Menu</a>
+        </div>
+        <div class="hero-img">
+          <img src="hero.jpg" alt="Margherita Pizza">
+        </div>
+      </div>
+    </section>
+
+    <!-- MENU -->
+    <section id="menu" class="section">
+      <div class="container">
+        <h2 class="section-title">Our Pizzas</h2>
+        <p class="section-sub">Classic favorites and chef specials — pick your size & crust</p>
+
+        <div class="cards">
+          <article class="card">
+            <img src="margherita.jpg" alt="Margherita">
+            <div class="card-body">
+              <h3>Margherita</h3>
+              <p class="price">From ₹199</p>
+              <p class="desc">Fresh mozzarella, basil, signature tomato sauce.</p>
+              <a href="#order" class="btn-small">Order</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <img src="pepperoni.jpg" alt="Pepperoni">
+            <div class="card-body">
+              <h3>Pepperoni Feast</h3>
+              <p class="price">From ₹249</p>
+              <p class="desc">Loaded pepperoni, extra cheese, house blend herbs.</p>
+              <a href="#order" class="btn-small">Order</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <img src="veggie.jpg" alt="Veggie Pizza">
+            <div class="card-body">
+              <h3>Garden Veggie</h3>
+              <p class="price">From ₹219</p>
+              <p class="desc">Bell peppers, olives, onions, mushrooms, tomato.</p>
+              <a href="#order" class="btn-small">Order</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SPECIALS -->
+    <section id="specials" class="section alt">
+      <div class="container">
+        <h2 class="section-title">Special Deals</h2>
+        <div class="specials-grid">
+          <div class="special">
+            <h4>2 Pizza Combo</h4>
+            <p>Any 2 Medium + 1 Dip — ₹399</p>
+          </div>
+          <div class="special">
+            <h4>Family Feast</h4>
+            <p>2 Large + Garlic Bread + 2 Drinks — ₹899</p>
+          </div>
+          <div class="special">
+            <h4>Student Offer</h4>
+            <p>Flat 25% off (ID required)</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+      <div class="container about-inner">
+        <div class="about-text">
+          <h2 class="section-title">About Dominoze</h2>
+          <p>We bake with passion — crisp crust, fresh toppings and fast delivery. Supporting local farms for fresh produce.</p>
+        </div>
+        <div class="about-img">
+          <img src="kitchen.jpg" alt="Kitchen">
+        </div>
+      </div>
+    </section>
+
+    <!-- ORDER / CONTACT -->
+    <section id="order" class="section alt">
+      <div class="container">
+        <h2 class="section-title">Place Your Order</h2>
+        <div class="order-grid">
+
+          <!-- UPDATED FORM -->
+          <form class="order-form" action="order.php" method="POST">
+            <label>Full Name</label>
+            <input type="text" name="Name" required>
+
+            <label>Phone</label>
+            <input type="tel" name="Phone" required>
+
+            <label>Pizza Choice</label>
+            <select name="Pizza">
+              <option>Margherita - Medium</option>
+              <option>Pepperoni Feast - Medium</option>
+              <option>Garden Veggie - Medium</option>
+            </select>
+
+            <label>Address</label>
+            <textarea name="Address" rows="3" required></textarea>
+
+            <button type="submit" class="btn">Send Order</button>
+          </form>
+
+          <div class="order-info">
+            <h3>Delivery Info</h3>
+            <p>Avg delivery: 30–45 mins</p>
+            <p>Payment: Cash on delivery / UPI</p>
+            <h4>Contact</h4>
+            <p>Phone: +91 98765 43210</p>
+            <p>Email: support@dominoze.example</p>
+            <div class="small-note">*This is a static demo. Replace mailto action with server endpoint when adding backend.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© 2025 Dominoze • Made with ❤️ • Demo project</p>
+    </div>
+  </footer>
+</body>
+</html>
